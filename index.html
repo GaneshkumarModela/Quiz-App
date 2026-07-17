@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            background-color: #f4f4f4;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .quiz-container{
+            padding: 20px;
+            background-color: white;
+            /* border-style: dashed; */
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button{
+            margin-top: 15px;
+            width: 100%;
+            padding: 8px;
+            cursor: pointer;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 id="question">Question text</h2>
+
+        <div>
+            <input type="radio" name="answer" id="a" value="a">
+            <label for="a" id="a_text"></label>
+        </div>
+
+        <div>
+            <input type="radio" name="answer" id="b" value="b">
+            <label for="b" id="b_text"></label>
+        </div>
+
+        <div>
+            <input type="radio" name="answer" id="c" value="c">
+            <label for="c" id="c_text"></label>
+        </div>
+
+        <div>
+            <input type="radio" name="answer" id="d" value="d">
+            <label for="d" id="d_text"></label>
+        </div>
+
+        <button id="submit">Submit</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
